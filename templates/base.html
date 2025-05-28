@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>{% block title %} {%endblock title%}</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">ARtech</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="{% url 'core' %}">Home</a></li>
+          <li><a href="{% url 'projects' %}" target="_blank">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="{% url 'contact' %}" target="_blank">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  {% block content %}
+  {% endblock content %}
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 ARtech. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

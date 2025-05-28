@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<title> {% block title %} Projects {%endblock title%} </title>
+
+{% block content %}
+ <section class="projects">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Smart Home Automation</h3>
+                    <p>Developed a full IoT-based smart home system using sensors and mobile integration.</p>
+                </div>
+                <div class="project-card">
+                    <h3>AI Chat Assistant</h3>
+                    <p>Created an intelligent chatbot powered by natural language processing for customer support.</p>
+                </div>
+                <div class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>Built a scalable e-commerce web app with secure payments and modern UI/UX.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Fleet Management System</h3>
+                    <p>GPS-based vehicle tracking and management platform with real-time analytics dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
